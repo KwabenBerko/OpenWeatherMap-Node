@@ -1,14 +1,29 @@
 {
   "name": "openweathermap-node",
   "version": "1.0.0",
-  "description": "",
+  "description": "An OpenWeatherMap Wrapper For Node.js",
   "main": "index.js",
+  "dependencies": {
+    "request": "^2.82.0"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KwabenBerko/OpenWeatherMap-Node.git"
+  },
+  "keywords": [
+    "OpenWeatherMap",
+    "OpenWeatherMap",
+    "Wrapper",
+    "Node"
+  ],
   "author": "Kwabena Berko <kwabenaberko95@gmail.com>",
-  "license": "ISC",
-  "dependencies": {
-    "request": "^2.82.0"
-  }
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KwabenBerko/OpenWeatherMap-Node/issues"
+  },
+  "homepage": "https://github.com/KwabenBerko/OpenWeatherMap-Node#readme"
 }
