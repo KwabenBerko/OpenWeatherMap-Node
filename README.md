@@ -90,24 +90,24 @@ helper.getCurrentWeatherByZipCode("90003", (err, currentWeather) => {
 ### (2) 5 day / 3 hour forecast
 #### Get three hour forecast by City Name:
 ```javascript
-helper.getThreeHourForecastByCityName("Pretoria", (err, currentWeather) => {
+helper.getThreeHourForecastByCityName("Pretoria", (err, threeHourForecast) => {
 	if(err){
 		console.log(err);
 	}
 	else{
-		console.log(currentWeather);
+		console.log(threeHourForecast);
 	}
 });
 
 ```
 #### Get three hour forecast by City ID:
 ```javascript
-helper.getThreeHourForecastByCityID("524901", (err, currentWeather) => {
+helper.getThreeHourForecastByCityID("524901", (err, threeHourForecast) => {
 	if(err){
 		console.log(err);
 	}
 	else{
-		console.log(currentWeather);
+		console.log(threeHourForecast);
 	}
 });
 
@@ -115,24 +115,24 @@ helper.getThreeHourForecastByCityID("524901", (err, currentWeather) => {
 
 #### Get three hour forecast by Geographic Coordinates:
 ```javascript
-helper.getThreeHourForecastByGeoCoordinates(6.5244,3.3792, (err, currentWeather) => {
+helper.getThreeHourForecastByGeoCoordinates(6.5244,3.3792, (err, threeHourForecast) => {
 	if(err){
 		console.log(err);
 	}
 	else{
-		console.log(currentWeather);
+		console.log(threeHourForecast);
 	}
 });
 
 ```
 #### Get three hour forecast by Zip Code:
 ```javascript
-helper.getThreeHourForecastByZipCode("94040", (err, currentWeather) => {
+helper.getThreeHourForecastByZipCode("94040", (err, threeHourForecast) => {
 	if(err){
 		console.log(err);
 	}
 	else{
-		console.log(currentWeather);
+		console.log(threeHourForecast);
 	}
 });
 
