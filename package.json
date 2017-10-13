@@ -18,7 +18,9 @@
     "OpenWeatherMap",
     "OpenWeatherMap",
     "Wrapper",
-    "Node"
+    "Node", 
+    "openweathermap",
+    "openweathermap-node"
   ],
   "author": "Kwabena Berko <kwabenaberko95@gmail.com>",
   "license": "MIT",
