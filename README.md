@@ -23,7 +23,7 @@ const OpenWeatherMapHelper = require("openweathermap-node");
 const helper = new OpenWeatherMapHelper(
 	{
 		APPID: 'YOUR_OPENWEATHERMAP_API_KEY_GOES_HERE',
-		"units": "imperial"
+		units: "imperial"
 	}
 );
 ```
