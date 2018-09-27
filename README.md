@@ -1,5 +1,5 @@
 ## OpenWeatherMap-Node
-An Openweathermap wrapper for nodejs
+An Openweathermap wrapper for nodejs with support for imperial units
 
 **You need an API Key to use the OpenWeatherMap API. Head on over to their [website](http://openweathermap.org/) if you don't already have one.**
 
