@@ -4,7 +4,7 @@
   "description": "An OpenWeatherMap Wrapper For Node.js",
   "main": "index.js",
   "dependencies": {
-    "request": "^2.82.0"
+    "request": "^2.88.0"
   },
   "devDependencies": {},
   "scripts": {
