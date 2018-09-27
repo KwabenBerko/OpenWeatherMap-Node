@@ -71,7 +71,7 @@ OpenWeatherMapHelper.prototype.getCurrentWeatherByZipCode = function(zipCode, ca
 //THREE HOUR FORECAST START
 OpenWeatherMapHelper.prototype.getThreeHourForecastByCityName = function(cityName, callback) {
 	request.get(`${this.forecasturl}q=${cityName}&APPID=${this.config.APPID}`,
-	 (err, data)=>{
+ (err, data)=>{
 		sendResponse(err, data, callback);
 	})
 };
