@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/KwabenBerko/OpenWeatherMap-Node.git"
+    "url": "git+https://github.com/SahilRS200/OpenWeatherMap-Node"
   },
   "keywords": [
     "OpenWeatherMap",
@@ -22,10 +22,10 @@
     "openweathermap",
     "openweathermap-node"
   ],
-  "author": "Kwabena Berko <kwabenaberko95@gmail.com>",
+  "author": "Kwabena Berko <kwabenaberko95@gmail.com> |  Sahil RS200 <sahilalibt12@hotmail.com",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/KwabenBerko/OpenWeatherMap-Node/issues"
+    "url": "https://github.com/SahilRS200/OpenWeatherMap-Node/issues"
   },
-  "homepage": "https://github.com/KwabenBerko/OpenWeatherMap-Node#readme"
+  "homepage": "https://github.com/SahilRS200/OpenWeatherMap-Node#readme"
 }
