@@ -1,7 +1,7 @@
 {
-  "name": "openweathermap-node-with-units-preference",
+  "name": "openweathermap-node",
   "version": "1.1.2",
-  "description": "An OpenWeatherMap Wrapper For Node.js, with working units option support",
+  "description": "An OpenWeatherMap Wrapper For Node.js",
   "main": "index.js",
   "dependencies": {
     "request": "^2.82.0"
