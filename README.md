@@ -7,7 +7,7 @@ An Openweathermap wrapper for nodejs with support for imperial units
 ## Installation
 
 ``` javascript
-npm install openweathermap-node
+npm i openweathermap-node-with-units-preference
 ```
 
 ## Usage
