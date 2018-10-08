@@ -1,5 +1,5 @@
 {
-  "name": "openweathermap-node",
+  "name": "openweathermap-node-with-units-preference",
   "version": "1.1.2",
   "description": "An OpenWeatherMap Wrapper For Node.js",
   "main": "index.js",
