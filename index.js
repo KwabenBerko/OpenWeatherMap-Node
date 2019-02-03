@@ -1,4 +1,4 @@
-/* 
+/*
 	OPEN WEATHER MAP WRAPPER FOR NODEJS
 	Author: Kwabena Berko
 	Email: kwabenaberko95@gmail.com
@@ -69,6 +69,7 @@ OpenWeatherMapHelper.prototype.getThreeHourForecastByCityName = function(cityNam
 		sendResponse(err, data, callback);
 	})
 };
+
 OpenWeatherMapHelper.prototype.getThreeHourForecastByCityID = function(cityId, callback) {
 	request.get(`https://api.openweathermap.org/data/2.5/forecast?id=${cityId}&units=${this.config.units}&APPID=${this.config.APPID}`,
 	 (err, data)=>{
@@ -90,6 +91,36 @@ OpenWeatherMapHelper.prototype.getThreeHourForecastByZipCode = function(zipCode,
 	})
 };
 //THREE HOUR FORECAST END
+
+//SIXTEEN DAY FORECAST END
+OpenWeatherMapHelper.prototype.getSixteenDayForecastByCityName = function(cityName, callback) {
+  request.get(`https://api.openweathermap.org/data/2.5/forecast/daily?q=${cityName}&units=${this.config.units}&APPID=${this.config.APPID}`,
+  (err, data)=>{
+      OpenWeatherMapHelper.sendResponse(err, data, callback);
+  })
+};
+
+OpenWeatherMapHelper.prototype.getSixteenDayForecastByCityID = function(cityId, callback) {
+  request.get(`https://api.openweathermap.org/data/2.5/forecast/daily?id=${cityId}&units=${this.config.units}&APPID=${this.config.APPID}`,
+	 (err, data)=>{
+		sendResponse(err, data, callback);
+	})
+};
+
+OpenWeatherMapHelper.prototype.getSixteenDayForecastByGeoCoordinates = function(latitude, longitude, callback) {
+  request.get(`https://api.openweathermap.org/data/2.5/forecast/daily?lat=${parseFloat(latitude)}&lon=${parseFloat(longitude)}&units=${this.config.units}&APPID=${this.config.APPID}`,
+	 (err, data)=>{
+		sendResponse(err, data, callback);
+	})
+};
+
+OpenWeatherMapHelper.prototype.getSixteenDayForecastByZipCode = function(zipCode, callback) {
+  request.get(`https://api.openweathermap.org/data/2.5/forecast/daily?zip=${zipCode.toString()}&units=${this.config.units}&APPID=${this.config.APPID}`,
+	 (err, data)=>{
+		sendResponse(err, data, callback);
+	})
+};
+//SIXTEEN DAY FORECAST END
 
 module.exports = OpenWeatherMapHelper;
 
