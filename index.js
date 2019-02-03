@@ -96,7 +96,7 @@ OpenWeatherMapHelper.prototype.getThreeHourForecastByZipCode = function(zipCode,
 OpenWeatherMapHelper.prototype.getSixteenDayForecastByCityName = function(cityName, callback) {
   request.get(`https://api.openweathermap.org/data/2.5/forecast/daily?q=${cityName}&units=${this.config.units}&APPID=${this.config.APPID}`,
   (err, data)=>{
-      OpenWeatherMapHelper.sendResponse(err, data, callback);
+    sendResponse(err, data, callback);
   })
 };
 
