@@ -137,8 +137,3 @@ helper.getThreeHourForecastByZipCode("94040", (err, threeHourForecast) => {
 });
 
 ```
-
-
-### Upcoming Feature
-1. 16 day / daily forecast 
-
