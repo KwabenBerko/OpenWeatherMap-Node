@@ -32,29 +32,29 @@ function sendResponse(err, data, callback) {
 }
 
 //CURRENT WEATHER START
-OpenWeatherMapHelper.prototype.getCurrentWeatherByCityName = function (cityName, lang, callback) {
-	request.get(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=${this.config.units}&APPID=${this.config.APPID}&lang=${lang}`,
+OpenWeatherMapHelper.prototype.getCurrentWeatherByCityName = function (cityName, callback) {
+	request.get(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=${this.config.units}&APPID=${this.config.APPID}&lang=${this.config.lang}`,
 		(err, data) => {
 			sendResponse(err, data, callback);
 		})
 };
 
-OpenWeatherMapHelper.prototype.getCurrentWeatherByCityID = function (cityId, lang, callback) {
-	request.get(`https://api.openweathermap.org/data/2.5/weather?id=${cityId}&units=${this.config.units}&APPID=${this.config.APPID}&lang=${lang}`,
+OpenWeatherMapHelper.prototype.getCurrentWeatherByCityID = function (cityId, callback) {
+	request.get(`https://api.openweathermap.org/data/2.5/weather?id=${cityId}&units=${this.config.units}&APPID=${this.config.APPID}&lang=${this.config.lang}`,
 		(err, data) => {
 			sendResponse(err, data, callback);
 		})
 };
 
-OpenWeatherMapHelper.prototype.getCurrentWeatherByGeoCoordinates = function (latitude, longitude, lang, callback) {
-	request.get(`https://api.openweathermap.org/data/2.5/weather?lat=${parseFloat(latitude)}&lon=${parseFloat(longitude)}&units=${this.config.units}&APPID=${this.config.APPID}&lang=${lang}`,
+OpenWeatherMapHelper.prototype.getCurrentWeatherByGeoCoordinates = function (latitude, longitude, callback) {
+	request.get(`https://api.openweathermap.org/data/2.5/weather?lat=${parseFloat(latitude)}&lon=${parseFloat(longitude)}&units=${this.config.units}&APPID=${this.config.APPID}&lang=${this.config.lang}`,
 		(err, data) => {
 			sendResponse(err, data, callback);
 		})
 };
 
-OpenWeatherMapHelper.prototype.getCurrentWeatherByZipCode = function (zipCode, lang, callback) {
-	request.get(`https://api.openweathermap.org/data/2.5/weather?zip=${zipCode.toString()}&units=${this.config.units}&APPID=${this.config.APPID}&lang=${lang}`,
+OpenWeatherMapHelper.prototype.getCurrentWeatherByZipCode = function (zipCode, callback) {
+	request.get(`https://api.openweathermap.org/data/2.5/weather?zip=${zipCode.toString()}&units=${this.config.units}&APPID=${this.config.APPID}&lang=${this.config.lang}`,
 		(err, data) => {
 			sendResponse(err, data, callback);
 		})
@@ -63,28 +63,28 @@ OpenWeatherMapHelper.prototype.getCurrentWeatherByZipCode = function (zipCode, l
 //CURRENT WEATHER END
 
 //THREE HOUR FORECAST START
-OpenWeatherMapHelper.prototype.getThreeHourForecastByCityName = function (cityName, lang, callback) {
-	request.get(`https://api.openweathermap.org/data/2.5/forecast?q=${cityName}&units=${this.config.units}&APPID=${this.config.APPID}&lang=${lang}`,
+OpenWeatherMapHelper.prototype.getThreeHourForecastByCityName = function (cityName, callback) {
+	request.get(`https://api.openweathermap.org/data/2.5/forecast?q=${cityName}&units=${this.config.units}&APPID=${this.config.APPID}&lang=${this.config.lang}`,
 		(err, data) => {
 			sendResponse(err, data, callback);
 		})
 };
-OpenWeatherMapHelper.prototype.getThreeHourForecastByCityID = function (cityId, lang, callback) {
-	request.get(`https://api.openweathermap.org/data/2.5/forecast?id=${cityId}&units=${this.config.units}&APPID=${this.config.APPID}&lang=${lang}`,
-		(err, data) => {
-			sendResponse(err, data, callback);
-		})
-};
-
-OpenWeatherMapHelper.prototype.getThreeHourForecastByGeoCoordinates = function (latitude, longitude, lang, callback) {
-	request.get(`https://api.openweathermap.org/data/2.5/forecast?lat=${parseFloat(latitude)}&lon=${parseFloat(longitude)}&units=${this.config.units}&APPID=${this.config.APPID}&lang=${lang}`,
+OpenWeatherMapHelper.prototype.getThreeHourForecastByCityID = function (cityId, callback) {
+	request.get(`https://api.openweathermap.org/data/2.5/forecast?id=${cityId}&units=${this.config.units}&APPID=${this.config.APPID}&lang=${this.config.lang}`,
 		(err, data) => {
 			sendResponse(err, data, callback);
 		})
 };
 
-OpenWeatherMapHelper.prototype.getThreeHourForecastByZipCode = function (zipCode, lang, callback) {
-	request.get(`https://api.openweathermap.org/data/2.5/forecast?zip=${zipCode.toString()}&units=${this.config.units}&APPID=${this.config.APPID}&lang=${lang}`,
+OpenWeatherMapHelper.prototype.getThreeHourForecastByGeoCoordinates = function (latitude, longitude, callback) {
+	request.get(`https://api.openweathermap.org/data/2.5/forecast?lat=${parseFloat(latitude)}&lon=${parseFloat(longitude)}&units=${this.config.units}&APPID=${this.config.APPID}&lang=${this.config.lang}`,
+		(err, data) => {
+			sendResponse(err, data, callback);
+		})
+};
+
+OpenWeatherMapHelper.prototype.getThreeHourForecastByZipCode = function (zipCode, callback) {
+	request.get(`https://api.openweathermap.org/data/2.5/forecast?zip=${zipCode.toString()}&units=${this.config.units}&APPID=${this.config.APPID}&lang=${this.config.lang}`,
 		(err, data) => {
 			sendResponse(err, data, callback);
 		})
